@@ -1,19 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git y Github</title>
 </head>
+
 <body>
-    <header>Clase 4 - Git y Github</header>
+    <header>
+        <h3>Clase 3: Comandos Basicos de Git (init, add, commit)</h3>
+    </header>
+    <hr>
     <main>
-        <section>
-            <article>
-                <h2>Clase 4</h2>
-                <p>hola</p>
-            </article>
-        </section>
+        <ol>
+            <li>Inicializar un Repositorio Local</li>
+            <ul>
+            <br>
+                <ul><em>Definición:</em>
+                <li><p>Un repositorio es un espacio donde se guarda el código y su historial de cambios.</p></li>
+                </ul>
+
+                <ul><em>Comando:</em>
+                    <li><p>Para inicializar un nuevo repositorio, utilizamos el comando: [<strong>git init</strong>] <br> (este comando crea un nuevo directorio .git en la carpeta, que contiene todos los archivos necesarios para el seguimiento del proyecto).</p></li>  
+                </ul>
+
+                <ol><em>Demostración:</em>                    
+                    <li><p>Abrir la terminal y ejecutar <strong>mkdir mi_proyecto</strong> para crear un nuevo directorio.</p></li>   
+                    <li><p>Navegar a la carpeta con <strong>cd mi_proyecto</strong>.</p></li>
+                    <li><p>Ejecutar <strong>git init</strong> para inicializar el repositorio.</p></li>                 
+                </ol>
+                   
+
+                <ul><em>Recursos:</em>
+                    <li><a href="https://www.youtube.com/watch?v=5RI9DjssCJE">¿Como inicializo un repositorio en git?</a></li>
+                </ul>
+            <br>   
+            </ul>
+            
+            <li>Añadir Cambios al Área de Preparación</li>
+            <ul>
+            <br>
+                <ul><em>Definición:</em>
+                <li><p>El área de preparación (staging area) es un lugar donde se almacenan los cambios que se preparan para ser confirmados.</p></li>
+                </ul>
+
+                <ul><em>Comando:</em>
+                    <li><p>Para añadir un archivo al área de preparación, se usa: [<strong>git add nombre_del_archivo</strong>]</p></li>
+                    <li><p>Para añadir todos los archivos nuevos y modificados: [<strong>git add .</strong>]</p></li>  
+                </ul>
+
+                <ol><em>Demostración:</em>                    
+                    <li><p> Crear un archivo de texto en el directorio del proyecto: <strong>echo "Hola, Git!" > archivo.txt</strong>.</p></li>   
+                    <li><p>Usar <strong>git add archivo.txt</strong> para añadirlo al área de preparación.</p></li>                 
+                </ol>
+                   
+
+                <ul><em>Recursos:</em>
+                    <li><a href="https://www.youtube.com/watch?v=ioVl6azhvBY">¿Que es el Staging Area?</a></li>
+                </ul>
+            <br>   
+            </ul>
+
+            <li>Confirmar Cambios</li>
+            <ul>
+            <br>
+                <ul><em>Definición:</em>
+                <li><p>Un commit es una instantánea de los archivos en el área de preparación, junto con un mensaje descriptivo.</p></li>
+                </ul>
+
+                <ul><em>Comando:</em>
+                    <li><p>Para confirmar cambios, se usa: [<strong>git commit -m "Mensaje descriptivo del commit"</strong>]</p></li>
+                </ul>
+
+                <ol><em>Demostración:</em>                    
+                    <li><p>Abrir la terminal y ejecutar <strong>mkdir mi_proyecto</strong> para crear un nuevo directorio.</p></li>   
+                    <li><p>Navegar a la carpeta con <strong>cd mi_proyecto</strong>.</p></li>
+                    <li><p>Ejecutar <strong>git init</strong> para inicializar el repositorio.</p></li>                 
+                </ol>
+                   
+
+                <ul><em>Recursos:</em>
+                    <li><a href="https://www.youtube.com/watch?v=j9zAL52wuLg">¿Como hago un commit?</a></li>
+                </ul>
+            <br>   
+            </ul>
+        </ol>
     </main>
+
 </body>
+
 </html>
